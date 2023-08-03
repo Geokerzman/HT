@@ -1,0 +1,25 @@
+//Variables
+$website-width:1280px;
+//$main-color:#ffbc00;
+$main-color: #916ef5;
+$light-color:#f4f4f4;
+$dark-color:#333;
+$medium-color:#ccc;
+$cards-color: #9c7ede;
+$icon-color: #595757;
+$testimonials-color:#595757;
+$footer-color: #1c1c1c;
+$bg-image:url('https://9to5mac.com/wp-content/uploads/sites/6/2018/07/Abstract-Shapes-2.jpg');
+
+
+
+//Set text color
+
+
+@function set-text-color($color) {
+  @if(lightness($color) > 50){
+    @return #000;
+  }@else{
+    @return #fff;
+  }
+}
